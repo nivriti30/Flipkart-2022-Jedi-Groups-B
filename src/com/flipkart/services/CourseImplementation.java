@@ -38,8 +38,9 @@ public class CourseImplementation implements CourseInterface {
 			return;
 		}
 		System.out.println("Course Doesn't exist");
+		
 	}
-
+	
 	@Override
 	public ArrayList<Course> viewAllCourses() {
 		// TODO Auto-generated method stub

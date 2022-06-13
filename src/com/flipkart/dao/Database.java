@@ -10,6 +10,5 @@ public class Database {
 	public HashMap<Integer,Course> hm_course_list=new HashMap<>();
 	public ArrayList<Professor> profList=new ArrayList<>();
 	public ArrayList<Student> studList=new ArrayList<>();
-	
-	
+	public int phase = 1;
 }

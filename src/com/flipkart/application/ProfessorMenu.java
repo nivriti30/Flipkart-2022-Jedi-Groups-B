@@ -1,22 +1,24 @@
 package com.flipkart.application;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.flipkart.bean.*;
 import com.flipkart.services.*;
+import com.flipkart.dao.*;
 
 public class ProfessorMenu 
 {
 	Professor prof ;
+	Database database;
 	
-	public ProfessorMenu() {
+	public ProfessorMenu(Database database) {
 		String userID, userName,  emailID,  password, contactNo, professorId, areaOfExpertise;
 		int yearsOfExperience ;
 		Scanner sc = new Scanner(System.in) ;
 		System.out.println("Enter UserId") ;
 		userID = sc.nextLine() ;
-		System.out.println("Enter UserName") ;
-		userName = sc.nextLine() ;
+		
 		System.out.println("Enter emailId") ;
 		emailID = sc.nextLine() ;
 		System.out.println("Enter Password") ;
@@ -29,17 +31,18 @@ public class ProfessorMenu
 		areaOfExpertise = sc.nextLine() ;
 		System.out.println("Years of experience") ;
 		yearsOfExperience = sc.nextInt() ;
-		prof = new Professor( userID, userName, emailID, password, contactNo,professorId, areaOfExpertise,yearsOfExperience) ;
+		this.database = database;
+		prof = new Professor( userID, emailID, password, contactNo,professorId, areaOfExpertise,yearsOfExperience) ;
 	
 		
 	}
-	public void viewAllCourses()
+	public void viewAllCourses() throws ClassNotFoundException, SQLException
 	{
-		ArrayList<Course> courses = new ProfessorServiceImplementation().viewAllCourses();
+		ArrayList<Course> courses = new ProfessorServiceImplementation(database).viewAllCourses();
 		
 		System.out.println();
 	}
-	public void ProfOptions()
+	public void ProfOptions() throws ClassNotFoundException, SQLException
 	{
 		int d = 1 ;
 		int choice ;

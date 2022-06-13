@@ -7,9 +7,9 @@ public class Student extends user{
     private String feeStatus;
     private boolean isApproved;
     
-	public Student(String userID, String userName, String emailID, String password, String contactNo, String userId2,
+	public Student(String userID,String emailID, String password, String contactNo,
 			int semester, String grade, String feeStatus, boolean isApproved) {
-		super(userID, userName, emailID, password, contactNo);
+		super(userID, emailID, password, contactNo);
 		this.semester = semester;
 		this.grade = grade;
 		this.feeStatus = feeStatus;

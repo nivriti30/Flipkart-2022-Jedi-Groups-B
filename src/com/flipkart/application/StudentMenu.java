@@ -4,12 +4,13 @@ import java.util.*;
 
 import com.flipkart.bean.*;
 import com.flipkart.services.*;
+import com.flipkart.dao.*;
  
 
 public class StudentMenu {
-	public StudentMenu() {
+	public StudentMenu(Database database) {
 		int menuFlag; // used to determine the task to be done
-		StudentImplementation studentImplementation = new StudentImplementation(); // used to call student functions
+		StudentImplementation studentImplementation = new StudentImplementation(database); // used to call student functions
 		
 		String userIdLocal; // used to take userid as input
 		String passwordLocal;// used to take password as input

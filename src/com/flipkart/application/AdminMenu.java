@@ -52,8 +52,6 @@ public class AdminMenu {
 		System.out.println("Enter UserId");
 		userID = sc.nextLine();
 
-		System.out.println("Enter UserName");
-		userName = sc.nextLine();
 
 		System.out.println("Enter EmailID");
 		emailID = sc.nextLine();
@@ -74,7 +72,7 @@ public class AdminMenu {
 		yearsOfExperience = sc.nextInt();
 
 		admin.addProfessor(new Professor(
-				userID , userName , emailID , password , contactNo , professorId , areaOfExpertise , yearsOfExperience
+				userID , emailID , password , contactNo , professorId , areaOfExpertise , yearsOfExperience
 		)); // Admin is obj of type admin
 
 

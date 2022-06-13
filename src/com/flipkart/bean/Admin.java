@@ -3,9 +3,9 @@ package com.flipkart.bean;
 public class Admin extends user{
 	public String instituteName ;
 	
-	public Admin(String userID, String userName, String emailID, String password, String contactNo, String adminId,
+	public Admin(String userID, String emailID, String password, String contactNo, String adminId,
 			String instituteName) {
-		super(userID, userName, emailID, password, contactNo);
+		super(userID, emailID, password, contactNo);
 		this.instituteName = instituteName;
 	}
 	public String getInstituteName() {

@@ -3,14 +3,13 @@ package com.flipkart.bean;
 public class user 
 {
 	private String userID;
-	private String userName;
 	private String emailID;
 	private String Password;
 	private String ContactNo;
-	public user(String userID, String userName, String emailID, String password, String contactNo) {
+	public user(String userID, String emailID, String password, String contactNo) {
 		super();
 		this.userID = userID;
-		this.userName = userName;
+		
 		this.emailID = emailID;
 		Password = password;
 		ContactNo = contactNo;
@@ -20,12 +19,6 @@ public class user
 	}
 	public void setUserID(String userID) {
 		this.userID = userID;
-	}
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
 	}
 	public String getEmailID() {
 		return emailID;

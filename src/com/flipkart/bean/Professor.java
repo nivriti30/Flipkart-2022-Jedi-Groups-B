@@ -4,9 +4,9 @@ public class Professor extends user{
     private String areaOfExpertise;
     private int yearsOfExperience;
     
-	public Professor(String userID, String userName, String emailID, String password, String contactNo,
+	public Professor(String userID, String emailID, String password, String contactNo,
 			String professorId, String areaOfExpertise, int yearsOfExperience) {
-		super(userID, userName, emailID, password, contactNo);
+		super(userID, emailID, password, contactNo);
 		this.areaOfExpertise = areaOfExpertise;
 		this.yearsOfExperience = yearsOfExperience;
 	}

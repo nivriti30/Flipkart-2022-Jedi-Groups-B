@@ -3,6 +3,7 @@ package com.flipkart.services;
 import com.flipkart.bean.*;
 import java.util.*;
 import java.sql.SQLException;
+import com.flipkart.dao.*;
 
 public interface StudentInterface {
 //	ArrayList<Student> studList=new ArrayList<>();

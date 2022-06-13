@@ -8,12 +8,13 @@ public interface StudentInterface {
 //	ArrayList<Student> studList=new ArrayList<>();
 	
 	public Student validateCredentials(String userId,String password);
-	public void registeredCourseList(String studentId) throws SQLException;
+	public List<Course> registeredCourseList(String studentId) throws SQLException;
     public void registerCourses(String studentID) throws SQLException;
 
     void viewGradeCard(String studentId) throws SQLException;
 
     public List<Course> viewCourses() throws SQLException;
+    
 }
 
 

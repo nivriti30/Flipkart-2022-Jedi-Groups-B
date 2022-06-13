@@ -5,9 +5,9 @@ import com.flipkart.bean.*;
 
 public class CRSApplication{
     public static void main(String args[]){
-        int userType;
+        int userType; // type of user is specified in this
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // used for input
 
         while(true) {
             System.out.println("What are you?");

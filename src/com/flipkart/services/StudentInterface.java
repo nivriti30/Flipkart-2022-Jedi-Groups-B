@@ -5,7 +5,7 @@ import java.util.*;
 import java.sql.SQLException;
 
 public interface StudentInterface {
-	ArrayList<Student> studList=new ArrayList<>();
+//	ArrayList<Student> studList=new ArrayList<>();
 	
 	public Student validateCredentials(String userId,String password);
 	public void registeredCourseList(String studentId) throws SQLException;

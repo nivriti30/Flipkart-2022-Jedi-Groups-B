@@ -14,15 +14,15 @@ public class CourseImplementation implements CourseInterface {
 		this.db=db;
 	}
 	@Override
-	public void addCourse(int courseId, String courseName,double courseFee) {
+	public void addCourse(Course c) {
 		// TODO Auto-generated method stub
+		int courseId=c.getCourseId();
 		if(db.hm_course_list.containsKey(courseId)) {
 			System.out.println("Course Already Exists with the name "+db.hm_course_list.get(courseId).getCourseName());
 			System.out.println("Please Try Again");
 			return;
 		}
 	
-		Course c = new Course(courseId,courseName,courseFee);
 		db.CourseList.add(c);
 		db.hm_course_list.put(courseId,c);
 		System.out.println("Course Addition Successful");

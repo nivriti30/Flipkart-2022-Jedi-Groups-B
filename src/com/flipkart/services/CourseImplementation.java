@@ -4,6 +4,7 @@
 package com.flipkart.services;
 import com.flipkart.bean.*;
 import com.flipkart.dao.*;
+import java.util.*;
 /**
  * @author nivriti.pandey
  *
@@ -40,11 +41,9 @@ public class CourseImplementation implements CourseInterface {
 	}
 
 	@Override
-	public void viewAllCourses() {
+	public ArrayList<Course> viewAllCourses() {
 		// TODO Auto-generated method stub
-		for(Course c:db.CourseList) {
-			System.out.println(c.getCourseId()+"  "+c.getCourseName());
-		}
+		return db.CourseList;
 	}
 
 }

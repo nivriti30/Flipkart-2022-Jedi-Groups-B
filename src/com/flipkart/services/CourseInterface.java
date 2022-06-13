@@ -7,5 +7,7 @@ public interface CourseInterface {
 //	HashMap<Integer,Course> hm_course_list=new HashMap<>();
 	public void addCourse(Course c);
 	public void removeCourse(int CourseId);
-	public void viewAllCourses();
+	public ArrayList<Course> viewAllCourses();
+	
+	
 }

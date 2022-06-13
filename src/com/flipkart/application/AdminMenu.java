@@ -21,7 +21,7 @@ public class AdminMenu {
             choice=s.nextInt();
             
             switch(choice) {
-            	case 1://Professor
+            	case 1://Add Professor
             		break;
             	case 2://Add Course
             		break;

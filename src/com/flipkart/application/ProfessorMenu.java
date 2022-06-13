@@ -33,13 +33,52 @@ public class ProfessorMenu
 	
 		
 	}
+	public void viewAllCourses()
+	{
+		ArrayList<Course> courses = new ProfessorServiceImplementation().viewAllCourses();
+		
+		System.out.println();
+	}
 	public void ProfOptions()
 	{
 		int d = 1 ;
 		int choice ;
 		while(d != 0)
 		{
+			Scanner sc = new Scanner(System.in) ;
+			choice = sc.nextInt() ;
 			
+			switch(choice)
+			{
+				case 1: // Add functions 
+					viewAllCourses()  ;
+		            break;
+		 
+		       
+		        case 2:
+		        	System.out.println("Register for courses");
+		            break;
+		 
+		            // Case
+		        case 3:
+		        	System.out.println("List of students");
+		            break;
+		 
+		            // Case
+		        case 4:
+		        	System.out.println("Assign Grades");
+		            break;
+		 
+		        // Case
+		        case 5:
+		        	System.out.println("Exit");
+		        	d= 0 ;
+		            break;
+		          
+		        default:
+		            System.out.println("Invaid Entry");
+			}
+				
 		}
 	}
 }

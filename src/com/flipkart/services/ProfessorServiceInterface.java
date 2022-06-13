@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public interface ProfessorServiceInterface {
-    
+//	ArrayList<Professor> profList=new ArrayList<>();
     public ArrayList<Course> viewAllCourses() throws SQLException, ClassNotFoundException;
     public void registerCourses(Professor professor) throws SQLException, IOException;
     public Map<String, ArrayList<String>> viewEnrolledStudents(Professor professor) throws SQLException;

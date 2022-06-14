@@ -13,36 +13,7 @@ public class AdminMenu {
 	// instantiate admin obj
 	AdminInterface admin;
 	AdminMenu(){
-		String userID, userName, emailID, password, contactNo, adminId, institudeName;
-		int yearsOfExperience;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("enter User ID");
-		userID = sc.nextLine();
-
-		System.out.println("enter User Name");
-		userName = sc.nextLine();
-
-		System.out.println("enter email ID");
-		emailID = sc.nextLine();
-
-		System.out.println("enter password");
-		password = sc.nextLine();
-
-		System.out.println("enter contact");
-		contactNo  = sc.nextLine();
-
-		System.out.println("enter admin ID");
-		adminId = sc.nextLine();
-
-		System.out.println("enter institute name");
-		institudeName = sc.nextLine();
-
-		System.out.println("Enter years of exp");
-		yearsOfExperience = sc.nextInt();
-
-
-
-
+		
 	}
 
 	public void addProff(){

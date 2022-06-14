@@ -1,12 +1,24 @@
 package com.flipkart.bean;
 
+import java.util.ArrayList;
+
 public class Student extends user{
 
     private int semester;
     private String grade;
     private String feeStatus;
     private boolean isApproved;
+    private ArrayList<Course> preferences = new ArrayList<>();
     
+
+	public ArrayList<Course> getPreferences() {
+		return preferences;
+	}
+
+	public void setPreferences(Course course) {
+		this.preferences.add(course);
+	}
+
 	public Student(String userID,String emailID, String password, String contactNo,
 			int semester, String grade, String feeStatus, boolean isApproved) {
 		super(userID, emailID, password, contactNo);

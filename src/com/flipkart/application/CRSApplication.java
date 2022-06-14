@@ -84,7 +84,7 @@ public class CRSApplication{
 	
     public static void main(String args[]){
     	
-    	CRSApplication app = new CRSApplication(new Database());
+    	CRSApplication app = new CRSApplication(new Database()); // my app
     	
         int userType; // type of user is specified in this
 
